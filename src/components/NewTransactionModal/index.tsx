@@ -7,8 +7,32 @@ import {
   TransactionType,
   TransactionTypeButton,
 } from "./style";
+import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
+const newTransactionsSchema = z.object({
+  description: z.string(),
+  category: z.string(),
+  // type: z.enum(["income", "outcome"]),
+  price: z.number(),
+});
+
+type NewTransactionsFormInputs = z.infer<typeof newTransactionsSchema>;
 
 export function NewTransitionModal() {
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<NewTransactionsFormInputs>({
+    resolver: zodResolver(newTransactionsSchema),
+  });
+
+  function handleCreateNewTransaction(data: NewTransactionsFormInputs) {
+    console.log(data);
+  }
+
   return (
     <Dialog.Portal>
       <Overlay />
@@ -19,10 +43,25 @@ export function NewTransitionModal() {
           <X size={24} />
         </CloseButton>
 
-        <form>
-          <input type="text" placeholder="Descrição" required />
-          <input type="number" placeholder="Preço" required />
-          <input type="text" placeholder="Categoria" required />
+        <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
+          <input
+            {...register("description")}
+            type="text"
+            placeholder="Descrição"
+            required
+          />
+          <input
+            {...register("price", { valueAsNumber: true })}
+            type="number"
+            placeholder="Preço"
+            required
+          />
+          <input
+            {...register("category")}
+            type="text"
+            placeholder="Categoria"
+            required
+          />
 
           <TransactionType>
             <TransactionTypeButton value="income" variant="income">
@@ -36,7 +75,9 @@ export function NewTransitionModal() {
             </TransactionTypeButton>
           </TransactionType>
 
-          <button type="submit">Cadastrar</button>
+          <button type="submit" disabled={isSubmitting}>
+            Cadastrar
+          </button>
         </form>
       </Content>
     </Dialog.Portal>

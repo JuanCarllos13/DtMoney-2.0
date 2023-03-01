@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2023-02-27T17:15:10.417Z"
+    },
+    {
+      "id": 2,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2023-02-27T17:20:10.417Z"
+    },
+    {
+      "id": 2,
+      "description": "Viagem",
+      "type": "outcome",
+      "category": "Lazer",
+      "price": 50,
+      "createdAt": "2023-03-27T17:20:10.417Z"
+    }
+  ]
+}

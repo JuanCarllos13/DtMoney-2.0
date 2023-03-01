@@ -51,6 +51,11 @@ export const Content = styled(Dialog.Content)`
     border-radius: 6px;
     border: 0;
     margin-top: 1.5rem;
+    
+    
+    &:disabled{
+      opacity: 0.7;
+    }
 
     cursor: pointer;
 
