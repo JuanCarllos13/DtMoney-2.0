@@ -21,6 +21,7 @@ interface Transaction {
 
 export function Transaction() {
   const { transactions } = useContext(TransactionsContext);
+  console.log("query", transactions);
 
   return (
     <div>

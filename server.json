@@ -23,6 +23,22 @@
       "category": "Lazer",
       "price": 50,
       "createdAt": "2023-03-27T17:20:10.417Z"
+    },
+    {
+      "description": "Ignite- modulo",
+      "category": "Compra",
+      "price": 1999,
+      "type": "income",
+      "createdAt": "2023-03-01T19:27:57.666Z",
+      "id": 3
+    },
+    {
+      "description": "Alugel",
+      "category": "Compra",
+      "price": 1600,
+      "type": "outcome",
+      "createdAt": "2023-03-01T20:19:36.854Z",
+      "id": 4
     }
   ]
 }
