@@ -1,5 +1,5 @@
 <h1 align="center">
-  <br>Dt money
+  <br>Dt money 2.0
 </h1>
 
 ![Captura de tela 2023-03-01 175417](https://user-images.githubusercontent.com/86435195/222274316-184e599f-cef4-42be-afd7-5a587868fe53.png)
