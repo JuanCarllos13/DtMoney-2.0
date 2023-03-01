@@ -10,14 +10,32 @@
   Projeto criado com o intuito de mostrar meus conhecimentos ao decorrer da minha carreira.
 </h4>
 
-## ❓ O que é ?
-
-Este é um repositório no qual se encontra a parte Front-end de uma aplicação. Faço um clone desse Repositório e der o comando "yarn" para instalar todas os pacotes e dependências do projeto, em seguindo um "yarn dev" para executar o projeto. Rode também o yarn server para rodar o back-end local
-<hr>
-
 ## 🎯 Objetivo
 
 Esse projeto tem como objetivo, gerenciar o dinheiro, onde o usuário poderá incluir um dinheiro, e monitorar o quanto ele tá gastando e com o quer, no fim de cada retirada o sistema ira fazer um calculo baseado no valor de entrada e em cada retirada do dinheiro, retornado o valor que sobrou.
+
+<hr>
+
+<h3>🧭 Rodando a aplicação</h3>
+
+<span class="pl-c"><span class="pl-c"></span> Acesse a pasta do projeto no terminal/cmd e execute os seguintes comandos:</span>
+
+```
+cd Dtmoney
+npm install ou yarn
+code .
+```
+<span class="pl-c"><span class="pl-c"></span>Depois de ter iniciado o projeto no vscode, apenas digite o comando no terminal:</span>
+
+```
+yarn dev
+```
+
+<span class="pl-c"><span class="pl-c"></span>Depois de ter rodado o Front, você precisar rodar o comando abaixo para simular o back-end</span>
+
+```
+yarn server
+```
 
 <hr>
 
@@ -39,6 +57,10 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - TypeScript
 - React.js
 ---
+
+## 🚀 Versão 1.0
+
+Link: https://github.com/JuanCarllos13/Dtmoney
 
 ## 👨‍💻 Autor
 
