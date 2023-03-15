@@ -41,7 +41,7 @@ yarn server
 
 ## 📚 Seções
 
-O site é composto por 5 seções diferentes:
+O site é composto por 2 seções diferentes:
 
 - **Home:** Nele podemos ver um todas as transações.
 - **Nova transação:** É onde o usuário ira um inserir um nova quantia no saldo, ou fazer um gasto.
